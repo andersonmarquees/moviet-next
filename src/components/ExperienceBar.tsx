@@ -21,11 +21,7 @@ export function ExperienceBar() {
           {currentExperience > 0 && `${Math.ceil(percentToNextLevel)}%`}
         </span>
       </div>
-      <span>
-        {currentExperience === experienceToNextLevel
-          ? "Completed"
-          : `${experienceToNextLevel}xp`}
-      </span>
+      <span>{experienceToNextLevel}xp</span>
     </header>
   );
 }
